@@ -183,11 +183,11 @@
       flex-shrink: 0;
     }
     .step span { font-size: 0.9375rem; font-weight: 500; }
+    .steps .cta-wrap { margin-top: 2rem; }
 
     /* CTA */
     .cta {
       display: block;
-      margin-top: 1.5rem;
       background: var(--espresso);
       color: var(--cream);
       text-align: center;
@@ -280,11 +280,19 @@
       color: var(--muted-strong);
     }
 
-    /* Bottom CTA */
-    .bottom-cta {
-      margin-top: 3rem;
-      text-align: center;
+    /* Sticky bottom CTA */
+    .sticky-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-top: 1px solid var(--card-line);
+      background: rgba(246, 239, 226, 0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
     }
+    .sticky-cta .inner { max-width: 28rem; margin: 0 auto; padding: 0.75rem 1.5rem; }
+    .sticky-cta .cta { width: 100%; }
   </style>
 </head>
 <body>
@@ -336,7 +344,9 @@
           <span>Enjoy your $500 7 Brew reward</span>
         </div>
       </div>
-      <a class="cta" href="https://giftclick.org/?offer_id=4512&amp;aff_id=157440">CLAIM NOW <span aria-hidden="true">→</span></a>
+      <div class="cta-wrap">
+        <a class="cta" href="https://giftclick.org/?offer_id=4512&amp;aff_id=157440">CLAIM NOW <span aria-hidden="true">→</span></a>
+      </div>
     </div>
 
     <div class="reviews">
@@ -379,10 +389,13 @@
         </div>
       </div>
     </div>
+  </main>
 
-    <div class="bottom-cta">
+  <!-- Sticky bottom CTA -->
+  <div class="sticky-cta">
+    <div class="inner">
       <a class="cta" href="https://giftclick.org/?offer_id=4512&amp;aff_id=157440">CLAIM NOW <span aria-hidden="true">→</span></a>
     </div>
-  </main>
-</body>
-</html>
+  </div>
+
+</body></html>
