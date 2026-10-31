@@ -151,38 +151,40 @@
       z-index: 1;
     }
 
-    /* How it works */
-    .how { margin-top: 3rem; }
-    .how .label {
+    /* Steps */
+    .steps { margin-top: 3.5rem; }
+    .eyebrow {
       text-align: center;
       font-size: 0.6875rem;
       font-weight: 600;
       letter-spacing: 0.4em;
       color: var(--gold);
     }
-    .steps { margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .steps .list { margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
     .step {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 1.25rem;
+      border: 1px solid var(--card-line);
       background: var(--cream-deep);
-      border-radius: 999px;
-      padding: 0.875rem 1.25rem;
+      border-radius: 1rem;
+      padding: 1.25rem 1.25rem;
     }
     .step .num {
-      width: 1.75rem;
-      height: 1.75rem;
-      border-radius: 50%;
-      background: var(--espresso);
-      color: var(--cream);
-      font-size: 0.8125rem;
-      font-weight: 700;
+      flex: none;
+      width: 2.75rem;
+      height: 2.75rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      border-radius: 9999px;
+      background: var(--espresso);
+      color: var(--gold-soft);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.125rem;
+      font-weight: 700;
     }
-    .step span { font-size: 0.9375rem; font-weight: 500; }
+    .step p { font-size: 1rem; }
     .steps .cta-wrap { margin-top: 2rem; }
 
     /* CTA */
@@ -201,44 +203,31 @@
     .cta:hover { background: var(--espresso-deep); }
     .cta span { margin-left: 0.35em; }
 
-    /* Reviews */
-    .reviews { margin-top: 4rem; }
-    .reviews .label {
-      text-align: center;
-      font-size: 0.6875rem;
-      font-weight: 600;
-      letter-spacing: 0.4em;
-      color: var(--gold);
-    }
-    .reviews h3 {
-      margin-top: 0.75rem;
+    /* Testimonials */
+    .vouches { margin-top: 3.5rem; }
+    .vouches h3 {
+      margin-top: 0.5rem;
       text-align: center;
       font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.75rem;
+      font-size: 1.875rem;
       font-weight: 700;
     }
-    .reviews h3 em { color: var(--gold); font-style: italic; }
-    .rating {
-      margin-top: 0.75rem;
-      text-align: center;
-      font-size: 0.875rem;
-      color: var(--muted);
-    }
-    .rating strong { color: var(--espresso); }
-
-    .review-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
-    .review {
+    .vouches h3 em { color: var(--gold); font-style: italic; }
+    .rating { margin-top: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+    .rating p { font-size: 0.875rem; color: var(--muted); }
+    .vouch-list { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+    .vouch {
       background: #fff;
       border: 1px solid var(--card-line);
       border-radius: 1.25rem;
       padding: 1.25rem 1.35rem;
     }
-    .review .head {
+    .vouch .who {
       display: flex;
       align-items: center;
       gap: 0.75rem;
     }
-    .review .avatar {
+    .vouch .avatar {
       width: 2.5rem;
       height: 2.5rem;
       border-radius: 50%;
@@ -252,15 +241,14 @@
       justify-content: center;
       flex-shrink: 0;
     }
-    .review .meta { flex: 1; }
-    .review .name {
+    .vouch .name {
       font-weight: 600;
       font-size: 0.9375rem;
       display: flex;
       align-items: center;
       gap: 0.4rem;
     }
-    .review .verified {
+    .vouch .verified {
       font-size: 0.6875rem;
       font-weight: 600;
       color: var(--verify);
@@ -268,12 +256,12 @@
       padding: 0.15rem 0.45rem;
       border-radius: 999px;
     }
-    .review .loc {
+    .vouch .meta {
       font-size: 0.75rem;
       color: var(--muted);
       margin-top: 0.15rem;
     }
-    .review .text {
+    .vouch .text {
       margin-top: 0.85rem;
       font-size: 0.9375rem;
       line-height: 1.55;
@@ -324,71 +312,73 @@
       <div class="cup">☕</div>
     </div>
 
-    <div class="how">
-      <div class="label">HOW IT WORKS</div>
-      <div class="steps">
+    <section class="steps">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <div class="list">
         <div class="step">
           <div class="num">1</div>
-          <span>Click "Claim Now"</span>
+          <p>Click "Claim Now"</p>
         </div>
         <div class="step">
           <div class="num">2</div>
-          <span>Enter your email and basic info</span>
+          <p>Enter your email and basic info</p>
         </div>
         <div class="step">
           <div class="num">3</div>
-          <span>Complete the simple verification</span>
+          <p>Complete the simple verification</p>
         </div>
         <div class="step">
           <div class="num">4</div>
-          <span>Enjoy your $500 7 Brew reward</span>
+          <p>Enjoy your $500 7 Brew reward</p>
         </div>
       </div>
       <div class="cta-wrap">
         <a class="cta" href="https://giftclick.org/?offer_id=4512&amp;aff_id=157440">CLAIM NOW <span aria-hidden="true">→</span></a>
       </div>
-    </div>
+    </section>
 
-    <div class="reviews">
-      <div class="label">MEMBER VOUCHES</div>
+    <section class="vouches">
+      <p class="eyebrow">MEMBER VOUCHES</p>
       <h3>What <em>Members</em> Say</h3>
-      <div class="rating"><strong>4.9</strong> · 9,241 reviews</div>
+      <div class="rating">
+        <p><strong>4.9</strong> · 9,241 reviews</p>
+      </div>
 
-      <div class="review-list">
-        <div class="review">
-          <div class="head">
-            <div class="avatar">J</div>
-            <div class="meta">
-              <div class="name">Jessica R. <span class="verified">Verified</span></div>
-              <div class="loc">Miami, FL · 2 days ago</div>
+      <div class="vouch-list">
+        <article class="vouch">
+          <div class="who">
+            <span class="avatar">J</span>
+            <div>
+              <p class="name">Jessica R. <span class="verified">Verified</span></p>
+              <p class="meta">Miami, FL · 2 days ago</p>
             </div>
           </div>
           <p class="text">My whole week runs on the drive-thru anyway. Did the steps on my lunch break and the reward code hit my inbox before my shift ended.</p>
-        </div>
+        </article>
 
-        <div class="review">
-          <div class="head">
-            <div class="avatar">M</div>
-            <div class="meta">
-              <div class="name">Maya K. <span class="verified">Verified</span></div>
-              <div class="loc">Los Angeles, CA · 1 week ago</div>
+        <article class="vouch">
+          <div class="who">
+            <span class="avatar">M</span>
+            <div>
+              <p class="name">Maya K. <span class="verified">Verified</span></p>
+              <p class="meta">Los Angeles, CA · 1 week ago</p>
             </div>
           </div>
           <p class="text">Honestly didn't believe it until the email came through. Put mine toward a week of morning lattes — would absolutely do it again without hesitation.</p>
-        </div>
+        </article>
 
-        <div class="review">
-          <div class="head">
-            <div class="avatar">A</div>
-            <div class="meta">
-              <div class="name">Ashley T. <span class="verified">Verified</span></div>
-              <div class="loc">Chicago, IL · 5 days ago</div>
+        <article class="vouch">
+          <div class="who">
+            <span class="avatar">A</span>
+            <div>
+              <p class="name">Ashley T. <span class="verified">Verified</span></p>
+              <p class="meta">Chicago, IL · 5 days ago</p>
             </div>
           </div>
           <p class="text">Super easy process, maybe 5 minutes total. The $500 covered my entire holiday coffee budget — highly recommend claiming.</p>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Sticky bottom CTA -->
