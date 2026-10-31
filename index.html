@@ -1,0 +1,388 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7 Brew Rewards — Claim Your $500 Gift Reward</title>
+  <meta name="description" content="Claim your $500 7 Brew gift reward. Click Claim Now, enter your email, complete the simple verification and enjoy your reward.">
+  <meta name="author" content="7 Brew Rewards">
+  <meta property="og:title" content="7 Brew Rewards — Claim Your $500 Gift Reward">
+  <meta property="og:description" content="Claim your $500 7 Brew gift reward. Click Claim Now, enter your email, complete the simple verification and enjoy your reward.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="7 Brew Rewards — Claim Your $500 Gift Reward">
+  <meta name="twitter:description" content="Claim your $500 7 Brew gift reward. Click Claim Now, enter your email, complete the simple verification and enjoy your reward.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #f6efe2;
+      --cream-deep: #efe5d2;
+      --espresso: #3a2a18;
+      --espresso-deep: #2a1c0e;
+      --gold: #c39a4a;
+      --gold-soft: #d8b56b;
+      --card-line: #e2d6bf;
+      --verify: #4d7c4d;
+      --muted: rgba(58, 42, 24, 0.65);
+      --muted-strong: rgba(58, 42, 24, 0.55);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--espresso);
+      font-family: "Inter", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-display { font-family: "Playfair Display", Georgia, serif; }
+    main { max-width: 28rem; margin: 0 auto; padding: 0 1.5rem 10rem; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Brand header */
+    header.brand {
+      border-bottom: 1px solid var(--card-line);
+      padding: 3rem 0;
+      text-align: center;
+    }
+    header.brand h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      color: var(--espresso);
+    }
+    header.brand p {
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.45em;
+      color: var(--muted);
+    }
+
+    /* Ornament divider */
+    .divider {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .divider .line { height: 1px; width: 4rem; background: var(--card-line); }
+    .divider .diamond { width: 0.5rem; height: 0.5rem; background: var(--gold); transform: rotate(45deg); }
+
+    /* Headline */
+    .headline { margin-top: 2rem; text-align: center; }
+    .headline h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .headline h2 em { color: var(--gold); font-style: italic; }
+    .headline p { margin-top: 1rem; font-size: 1.125rem; color: var(--muted); }
+    .headline strong { color: var(--espresso); font-weight: 700; }
+
+    /* Gift card */
+    .gift-card {
+      margin-top: 2rem;
+      border-radius: 1.5rem;
+      padding: 1.75rem;
+      text-align: left;
+      color: var(--cream);
+      background:
+        radial-gradient(120% 120% at 15% 0%, #4a3620 0%, #2f2113 45%, #241a0e 100%);
+      box-shadow: 0 24px 48px -20px rgba(42, 28, 14, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+    .gift-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(115deg, transparent 55%, rgba(216, 181, 107, 0.12) 75%, transparent 90%);
+      pointer-events: none;
+    }
+    .gift-card .top { display: flex; align-items: flex-start; justify-content: space-between; position: relative; z-index: 1; }
+    .gift-card .brandmark {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: var(--gold-soft);
+    }
+    .gift-card .badge {
+      text-align: right;
+      font-size: 0.625rem;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      color: rgba(246, 239, 226, 0.5);
+      line-height: 1.6;
+    }
+    .gift-card .value-label {
+      margin-top: 1.5rem;
+      font-size: 0.625rem;
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      color: rgba(246, 239, 226, 0.5);
+    }
+    .gift-card .value {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 3.75rem;
+      font-weight: 700;
+      color: var(--gold-soft);
+      line-height: 1.05;
+    }
+    .gift-card .value sup {
+      font-size: 1.25rem;
+      vertical-align: super;
+      margin-left: 0.1em;
+    }
+    .gift-card .divider-line {
+      margin-top: 1.25rem;
+      height: 1px;
+      background: rgba(246, 239, 226, 0.15);
+    }
+    .gift-card .cup {
+      position: absolute;
+      bottom: 1.25rem;
+      right: 1.5rem;
+      font-size: 1.25rem;
+      opacity: 0.4;
+      z-index: 1;
+    }
+
+    /* How it works */
+    .how { margin-top: 3rem; }
+    .how .label {
+      text-align: center;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+    }
+    .steps { margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--cream-deep);
+      border-radius: 999px;
+      padding: 0.875rem 1.25rem;
+    }
+    .step .num {
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 50%;
+      background: var(--espresso);
+      color: var(--cream);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step span { font-size: 0.9375rem; font-weight: 500; }
+
+    /* CTA */
+    .cta {
+      display: block;
+      margin-top: 1.5rem;
+      background: var(--espresso);
+      color: var(--cream);
+      text-align: center;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      padding: 1.1rem 1.5rem;
+      border-radius: 999px;
+      transition: background 0.2s ease;
+    }
+    .cta:hover { background: var(--espresso-deep); }
+    .cta span { margin-left: 0.35em; }
+
+    /* Reviews */
+    .reviews { margin-top: 4rem; }
+    .reviews .label {
+      text-align: center;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+    }
+    .reviews h3 {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+    .reviews h3 em { color: var(--gold); font-style: italic; }
+    .rating {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .rating strong { color: var(--espresso); }
+
+    .review-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
+    .review {
+      background: #fff;
+      border: 1px solid var(--card-line);
+      border-radius: 1.25rem;
+      padding: 1.25rem 1.35rem;
+    }
+    .review .head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .review .avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: var(--espresso);
+      color: var(--gold-soft);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .review .meta { flex: 1; }
+    .review .name {
+      font-weight: 600;
+      font-size: 0.9375rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .review .verified {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: var(--verify);
+      background: rgba(77, 124, 77, 0.12);
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+    }
+    .review .loc {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+    .review .text {
+      margin-top: 0.85rem;
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--muted-strong);
+    }
+
+    /* Bottom CTA */
+    .bottom-cta {
+      margin-top: 3rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="brand">
+      <h1>7 BREW</h1>
+      <p>DRIVE-THRU · COFFEE · ENERGY</p>
+    </header>
+
+    <div class="divider">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="headline">
+      <h2>7 Brew <em>Rewards</em><br>Program</h2>
+      <p>Claim your <strong>$500 7 Brew gift reward</strong></p>
+    </div>
+
+    <div class="gift-card">
+      <div class="top">
+        <div class="brandmark">7 BREW</div>
+        <div class="badge">DIGITAL<br>REWARD</div>
+      </div>
+      <div class="value-label">REWARD VALUE</div>
+      <div class="value">$500<sup>.00</sup></div>
+      <div class="divider-line"></div>
+      <div class="cup">☕</div>
+    </div>
+
+    <div class="how">
+      <div class="label">HOW IT WORKS</div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <span>Click "Claim Now"</span>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <span>Enter your email and basic info</span>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <span>Complete the simple verification</span>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <span>Enjoy your $500 7 Brew reward</span>
+        </div>
+      </div>
+      <a class="cta" href="https://giftclick.org/?offer_id=4512&amp;aff_id=157440">CLAIM NOW <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="reviews">
+      <div class="label">MEMBER VOUCHES</div>
+      <h3>What <em>Members</em> Say</h3>
+      <div class="rating"><strong>4.9</strong> · 9,241 reviews</div>
+
+      <div class="review-list">
+        <div class="review">
+          <div class="head">
+            <div class="avatar">J</div>
+            <div class="meta">
+              <div class="name">Jessica R. <span class="verified">Verified</span></div>
+              <div class="loc">Miami, FL · 2 days ago</div>
+            </div>
+          </div>
+          <p class="text">My whole week runs on the drive-thru anyway. Did the steps on my lunch break and the reward code hit my inbox before my shift ended.</p>
+        </div>
+
+        <div class="review">
+          <div class="head">
+            <div class="avatar">M</div>
+            <div class="meta">
+              <div class="name">Maya K. <span class="verified">Verified</span></div>
+              <div class="loc">Los Angeles, CA · 1 week ago</div>
+            </div>
+          </div>
+          <p class="text">Honestly didn't believe it until the email came through. Put mine toward a week of morning lattes — would absolutely do it again without hesitation.</p>
+        </div>
+
+        <div class="review">
+          <div class="head">
+            <div class="avatar">A</div>
+            <div class="meta">
+              <div class="name">Ashley T. <span class="verified">Verified</span></div>
+              <div class="loc">Chicago, IL · 5 days ago</div>
+            </div>
+          </div>
+          <p class="text">Super easy process, maybe 5 minutes total. The $500 covered my entire holiday coffee budget — highly recommend claiming.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-cta">
+      <a class="cta" href="https://giftclick.org/?offer_id=4512&amp;aff_id=157440">CLAIM NOW <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+</body>
+</html>
